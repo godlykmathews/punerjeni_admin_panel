@@ -56,6 +56,41 @@ export default function Reports() {
 
       <div className="bg-white shadow overflow-hidden sm:rounded-md">
         <ul className="divide-y divide-gray-200">
+
+
+        <li>
+              <div className="px-4 py-4 sm:px-6">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h3 className="text-lg font-medium text-gray-900">Drug Abuse</h3>
+                    <div className="mt-1 flex items-center">
+                      <span className="px-2 py-1 text-xs rounded-full bg-yellow-100 text-yellow-800">
+                        pending
+                      </span>
+                      <span className="ml-2 text-sm text-gray-500">
+                        15-09-2021
+                      </span>
+                    </div>
+                  </div>
+                  <div className="flex space-x-2">
+                    <button 
+                      className="text-indigo-600 hover:text-indigo-900"
+                    >
+                      Mark as
+                    </button>
+                    <button className="text-red-600 hover:text-red-900">Delete</button>
+                  </div>
+                </div>
+                <p className="mt-2 text-sm text-gray-600">Drug usage near School</p>
+                <div className="mt-2">
+                  <p className="text-sm text-gray-600">Location: Erumeli</p>
+                  <img src="https://clearbrook.banyantreatmentcenter.com/wp-content/uploads/2017/03/drug-abuse-1024x683.jpg" alt="Report" className="mt-4 w-auto h-60" />
+                  <video controls src="https://firebasestorage.googleapis.com/v0/b/punarjani-41317.firebasestorage.app/o/Drug%20addiction%20rampant%20on%20Kabul%20streets%20(1).mp4?alt=media&token=726edee3-3ec9-46c3-a0dd-9f0ef2580164" className="mt-4 w-auto h-60" />
+                </div>
+              </div>
+            </li>
+
+
           {reports.map((report) => (
             <li key={report.id}>
               <div className="px-4 py-4 sm:px-6">

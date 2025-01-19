@@ -13,7 +13,8 @@ import {
   Users,
   GamepadIcon,
   Scale,
-  Menu
+  Menu,
+  Home
 } from 'lucide-react';
 import RecoveryStories from './dashboard/RecoveryStories';
 import VideoLinks from './dashboard/VideoLinks';
@@ -23,6 +24,7 @@ import Reports from './dashboard/Reports';
 import SupportGroups from './dashboard/SupportGroups';
 import Games from './dashboard/Games';
 import LawInfo from './dashboard/LawInfo';
+import HomePage from './dashboard/HomePage';
 
 import AddGame from './dashboard/AddGame';
 import AddVideo from './dashboard/AddVideo';
@@ -164,7 +166,7 @@ export default function Dashboard() {
           <div className="py-6">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
               <Routes>
-                <Route path="/" element={<RecoveryStories />} />
+                <Route path="/" element={<HomePage />} />
                 <Route path="/recovery-stories" element={<RecoveryStories />} />
                 <Route path="/video-links" element={<VideoLinks />} />
                 <Route path="/rehab-centers" element={<RehabCenters />} />
